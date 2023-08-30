@@ -11,6 +11,9 @@ on:
 jobs:
   specs:
     name: specs
-    runs-on: actuated
+    runs-on: ubuntu-latest
     steps:
-      - uses: alexellis/actions-post@master
+     - uses: actions/checkout@v1
+     - uses: alexellis/actions-post@master
+     - name: uname
+        run: uname -a
