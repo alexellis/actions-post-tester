@@ -16,4 +16,4 @@ jobs:
      - uses: actions/checkout@v1
      - uses: alexellis/actions-post@master
      - name: uname
-        run: uname -a
+       run: uname -a
