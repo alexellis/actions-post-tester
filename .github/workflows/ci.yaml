@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - master
+
+jobs:
+  specs:
+    name: specs
+    runs-on: actuated
+    steps:
+      - uses: alexellis/actions-post@master
